@@ -1,0 +1,58 @@
+# descuentos-
+            double monto;
+            double x;
+            double descuento;
+            double Total;
+            string linea;
+
+            Console.WriteLine("Ingrese el total a pagar");
+            linea = Console.ReadLine();
+            monto=double.Parse(linea);
+
+            if(monto > 1500)
+            {
+                if(monto >2000)
+                {
+
+                    if(monto >3000)
+                    {
+                        x = 0.25;
+                        descuento = monto * x;
+                        Total = monto - descuento;
+                        Console.WriteLine("El total a pagar es: " + Total);
+                    }
+
+                    else
+                    {
+                        x = 0.10;
+                        descuento = monto * x;
+                        Total = monto - descuento;
+                        Console.WriteLine("El total a pagar es: " + Total);
+                    }
+                }
+
+
+                else
+                {
+                    x = 0.10;
+                    descuento=monto*x;
+                    Total = monto - descuento;
+                    Console.WriteLine("El total a pagar es: " + Total);
+                }
+            }
+
+
+            else
+            {
+                Console.WriteLine("El total a pagar es: " + monto);
+            }
+
+            Console.ReadKey();
+            
+
+          
+
+
+        }
+    }
+}
